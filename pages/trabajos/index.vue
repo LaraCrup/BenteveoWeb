@@ -10,7 +10,7 @@
                     <ul class="rowCenter">
                         <li v-for="section in sections" :key="section.id">
                             <a @click.prevent="scrollToSection(section.id)" :href="`#${section.id}`">{{ section.name
-                            }}</a>
+                                }}</a>
                         </li>
                     </ul>
                 </nav>
@@ -25,6 +25,20 @@
 <script setup>
 import { projects } from "~/shared/projects";
 import useProjects from "~/composables/useProjects";
+
+useSeoMeta({
+    title: "Trabajos y Proyectos | Benteveo - Creatividad que Impacta",
+    description: "Descubrí los proyectos creativos y campañas de comunicación que desarrollamos en Benteveo. Historias de marcas que conectan con su audiencia y generan impacto real.",
+    ogTitle: "Trabajos y Proyectos | Benteveo - Creatividad que Impacta",
+    ogDescription: "Descubrí los proyectos creativos y campañas de comunicación que desarrollamos en Benteveo. Historias de marcas que conectan con su audiencia y generan impacto real.",
+    ogImage: "/headerFooter/Logo-Benteveo.webp",
+    ogType: "website",
+    ogUrl: "https://www.benteveo.com/trabajos",
+    twitterTitle: "Trabajos y Proyectos | Benteveo - Creatividad que Impacta",
+    twitterDescription: "Descubrí los proyectos creativos y campañas de comunicación que desarrollamos en Benteveo. Historias de marcas que conectan con su audiencia y generan impacto real.",
+    twitterImage: "/headerFooter/Logo-Benteveo.webp",
+    twitterCard: 'summary_large_image',
+});
 
 const { shuffleArray } = useProjects();
 
