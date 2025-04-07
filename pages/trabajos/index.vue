@@ -31,12 +31,12 @@ useSeoMeta({
     description: "Descubrí los proyectos creativos y campañas de comunicación que desarrollamos en Benteveo. Historias de marcas que conectan con su audiencia y generan impacto real.",
     ogTitle: "Trabajos y Proyectos | Benteveo - Creatividad que Impacta",
     ogDescription: "Descubrí los proyectos creativos y campañas de comunicación que desarrollamos en Benteveo. Historias de marcas que conectan con su audiencia y generan impacto real.",
-    ogImage: "/headerFooter/Logo-Benteveo.webp",
+    ogImage: "/images/headerFooter/Logo-Benteveo.webp",
     ogType: "website",
     ogUrl: "https://www.benteveo.com/trabajos",
     twitterTitle: "Trabajos y Proyectos | Benteveo - Creatividad que Impacta",
     twitterDescription: "Descubrí los proyectos creativos y campañas de comunicación que desarrollamos en Benteveo. Historias de marcas que conectan con su audiencia y generan impacto real.",
-    twitterImage: "/headerFooter/Logo-Benteveo.webp",
+    twitterImage: "/images/headerFooter/Logo-Benteveo.webp",
     twitterCard: 'summary_large_image',
 });
 

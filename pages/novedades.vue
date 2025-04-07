@@ -29,12 +29,12 @@ useSeoMeta({
     description: "Inspirate con ideas, tendencias de marketing, creatividad, casos de éxito y novedades del mundo de la comunicación. El blog de Benteveo es tu aliado creativo.",
     ogTitle: "Novedades y Tendencias | Blog de Benteveo",
     ogDescription: "Inspirate con ideas, tendencias de marketing, creatividad, casos de éxito y novedades del mundo de la comunicación. El blog de Benteveo es tu aliado creativo.",
-    ogImage: "/headerFooter/Logo-Benteveo.webp",
+    ogImage: "/images/headerFooter/Logo-Benteveo.webp",
     ogType: "website",
     ogUrl: "https://www.benteveo.com/novedades",
     twitterTitle: "Novedades y Tendencias | Blog de Benteveo",
     twitterDescription: "Inspirate con ideas, tendencias de marketing, creatividad, casos de éxito y novedades del mundo de la comunicación. El blog de Benteveo es tu aliado creativo.",
-    twitterImage: "/headerFooter/Logo-Benteveo.webp",
+    twitterImage: "/images/headerFooter/Logo-Benteveo.webp",
     twitterCard: 'summary_large_image',
 });
 </script>

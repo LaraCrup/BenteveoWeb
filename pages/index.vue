@@ -16,12 +16,12 @@ useSeoMeta({
   description: "Benteveo es una agencia de publicidad y comunicación que transforma ideas en acciones de marketing. Ofrecemos servicios de creación de contenidos, producción de video, gestión de redes sociales, activaciones y desarrollo web para potenciar las marcas y organizaciones.",
   ogTitle: "Agencia de publicidad Creativa | Benteveo - Innovación y Estrategia",
   ogDescription: "Benteveo es una agencia de publicidad y comunicación que transforma ideas en acciones de marketing. Ofrecemos servicios de creación de contenidos, producción de video, gestión de redes sociales, activaciones y desarrollo web para potenciar las marcas y organizaciones.",
-  ogImage: "/headerFooter/Logo-Benteveo.webp",
+  ogImage: "/images/headerFooter/Logo-Benteveo.webp",
   ogType: "website",
   ogUrl: "https://benteveo.com",
   twitterTitle: "Agencia de publicidad Creativa | Benteveo - Innovación y Estrategia",
   twitterDescription: "Benteveo es una agencia de publicidad y comunicación que transforma ideas en acciones de marketing. Ofrecemos servicios de creación de contenidos, producción de video, gestión de redes sociales, activaciones y desarrollo web para potenciar las marcas y organizaciones.",
-  twitterImage: "/headerFooter/Logo-Benteveo.webp",
+  twitterImage: "/images/headerFooter/Logo-Benteveo.webp",
   twitterCard: 'summary_large_image',
 });
 

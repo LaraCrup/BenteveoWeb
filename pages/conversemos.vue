@@ -21,12 +21,12 @@ useSeoMeta({
     description: "¿Querés impulsar tu marca? Escribinos. En Benteveo creamos soluciones creativas a medida para potenciar tu comunicación y tus resultados.",
     ogTitle: "Conversemos | Contactanos en Benteveo",
     ogDescription: "¿Querés impulsar tu marca? Escribinos. En Benteveo creamos soluciones creativas a medida para potenciar tu comunicación y tus resultados.",
-    ogImage: "/headerFooter/Logo-Benteveo.webp",
+    ogImage: "/images/headerFooter/Logo-Benteveo.webp",
     ogType: "website",
     ogUrl: "https://www.benteveo.com/conversemos",
     twitterTitle: "Conversemos | Contactanos en Benteveo",
     twitterDescription: "¿Querés impulsar tu marca? Escribinos. En Benteveo creamos soluciones creativas a medida para potenciar tu comunicación y tus resultados.",
-    twitterImage: "/headerFooter/Logo-Benteveo.webp",
+    twitterImage: "/images/headerFooter/Logo-Benteveo.webp",
     twitterCard: 'summary_large_image',
 });
 </script>

@@ -17,12 +17,12 @@ useSeoMeta({
     description: "Conocé nuestros servicios de publicidad, contenido, redes sociales, activaciones, producción audiovisual y desarrollo web. Soluciones creativas pensadas para potenciar tu marca.",
     ogTitle: "Servicios de Publicidad y Comunicación | Benteveo",
     ogDescription: "Conocé nuestros servicios de publicidad, contenido, redes sociales, activaciones, producción audiovisual y desarrollo web. Soluciones creativas pensadas para potenciar tu marca.",
-    ogImage: "/headerFooter/Logo-Benteveo.webp",
+    ogImage: "/images/headerFooter/Logo-Benteveo.webp",
     ogType: "website",
     ogUrl: "https://www.benteveo.com/servicios",
     twitterTitle: "Servicios de Publicidad y Comunicación | Benteveo",
     twitterDescription: "Conocé nuestros servicios de publicidad, contenido, redes sociales, activaciones, producción audiovisual y desarrollo web. Soluciones creativas pensadas para potenciar tu marca.",
-    twitterImage: "/headerFooter/Logo-Benteveo.webp",
+    twitterImage: "/images/headerFooter/Logo-Benteveo.webp",
     twitterCard: 'summary_large_image',
 });
 </script>
