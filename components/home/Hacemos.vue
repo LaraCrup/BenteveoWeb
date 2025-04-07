@@ -5,8 +5,10 @@
             Your browser does not support the video tag.
         </video>
         <div class="column">
-            <div class="gifContainer column">
-                <img src="/images/home/branded-content.webp" alt="Creatividad Benteveo">
+            <div class="miniVideoContainer column">
+                <video autoplay muted loop playsinline class="bgVideo">
+                    <source src="/videos/somos/video-nuestro-adn.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="hacemosContent column">
                 <div class="column wow animate__animated animate__fadeInUp">
@@ -58,13 +60,13 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
     padding: 0;
 }
 
-.gifContainer {
+.miniVideoContainer {
     width: 100%;
     height: 100%;
     display: none;
 }
 
-.gifContainer img {
+.miniVideoContainer video {
     width: 100%;
     height: 19rem;
     object-fit: cover;
@@ -94,7 +96,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
         padding: 3rem 3rem 3rem 5rem;
     }
 
-    .gifContainer {
+    .miniVideoContainer {
         width: 12.5rem;
         height: auto;
         display: block;
@@ -105,14 +107,14 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
         transform: translateY(-50%);
     }
 
-    .gifContainer img {
+    .miniVideoContainer video {
         width: 100%;
         height: auto;
     }
 }
 
 @media (width >=750px) {
-    .gifContainer {
+    .miniVideoContainer {
         left: 20%;
     }
 }
@@ -122,7 +124,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
         gap: 1.5rem;
     }
 
-    .gifContainer {
+    .miniVideoContainer {
         left: 22.5%;
     }
 
@@ -140,7 +142,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
         font-size: 1.5rem;
     }
 
-    .gifContainer {
+    .miniVideoContainer {
         width: 15rem;
     }
 }
@@ -151,7 +153,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
         padding: 5rem 5rem 5rem 9rem;
     }
 
-    .gifContainer {
+    .miniVideoContainer {
         width: 19rem;
         left: 24%;
     }
@@ -166,7 +168,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
         font-size: 1.625rem;
     }
 
-    .gifContainer {
+    .miniVideoContainer {
         width: 22rem;
     }
 }
@@ -185,7 +187,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
         padding: 8rem 6rem 8rem 11rem;
     }
 
-    .gifContainer {
+    .miniVideoContainer {
         position: static;
         transform: translateY(-28%);
         margin-right: -6rem;
