@@ -1,7 +1,7 @@
 <template>
     <main>
         <PagesHero title="SIEMPRE EN MOVIMIENTO"
-            description="Las últimas noticias, campañas y tendencias que nos inspiran a seguir creando." heroVideo="" />
+            description="Las últimas noticias, campañas y tendencias que nos inspiran a seguir creando." heroVideo="novedades/novedades-blog-benteveo-agencia" />
         <div class="parallaxContent">
             <section class="bg-white">
                 <div class="blogsContainer wrapSpaceBetween">

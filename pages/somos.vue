@@ -3,7 +3,7 @@
     <PagesHero 
       title="UN EQUIPO, UNA VISIÓN"
       description="La creatividad como herramienta para construir conexiones potentes."
-      heroVideo=""
+      heroVideo="somos/somos-agencia-productora-benteveo"
     />
     <div class="parallaxContent">
       <SomosModelo />

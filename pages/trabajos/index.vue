@@ -2,7 +2,7 @@
     <main>
         <PagesHero title="LO QUE HACEMOS HABLA POR NOSOTROS"
             description="Descubrí las campañas que creamos con pasión, estrategia e innovación."
-            backgroundClass="heroSomos" heroVideo="" />
+            backgroundClass="heroSomos" heroVideo="trabajos/trabajos-campanas-eventos-tutoriales-publicidad" />
 
         <div class="parallaxContent">
             <section class="projectContent bg-black">

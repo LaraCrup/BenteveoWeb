@@ -7,7 +7,7 @@
         <div class="column">
             <div class="miniVideoContainer column">
                 <video autoplay muted loop playsinline class="bgVideo">
-                    <source src="/videos/somos/video-nuestro-adn.mp4" type="video/mp4">
+                    <source src="/videos/home/backstage-agencia-productora-benteveo.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="hacemosContent column">
