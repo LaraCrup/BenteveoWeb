@@ -1,6 +1,6 @@
 <template>
     <section class="w-full pensamosHacemos">
-        <video autoplay muted loop class="backgroundVideo">
+        <video autoplay muted loop playsinline class="backgroundVideo">
             <source src="/videos/somos/video-nuestro-adn.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -69,6 +69,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
 .miniVideoContainer video {
     width: 100%;
     height: 19rem;
+    filter: none;
     object-fit: cover;
 }
 
@@ -98,7 +99,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
 
     .miniVideoContainer {
         width: 12.5rem;
-        height: auto;
+        height: 12.5rem;
         display: block;
         position: absolute;
         top: 50%;
@@ -109,7 +110,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
 
     .miniVideoContainer video {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
 
@@ -144,6 +145,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
 
     .miniVideoContainer {
         width: 15rem;
+        height: 15rem;
     }
 }
 
@@ -155,6 +157,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
 
     .miniVideoContainer {
         width: 19rem;
+        height: 19rem;
         left: 24%;
     }
 }
@@ -170,6 +173,7 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
 
     .miniVideoContainer {
         width: 22rem;
+        height: 22rem;
     }
 }
 

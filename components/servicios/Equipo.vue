@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="equipo">
-            <video autoplay muted loop class="backgroundVideo">
+            <video autoplay muted loop playsinline class="backgroundVideo">
                 <source src="/videos/somos/video-nuestro-adn.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
