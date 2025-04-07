@@ -1,5 +1,8 @@
 <template>
-    <section class="heroContainer bgCover" :style="heroImage ? { backgroundImage: `url('/images/${heroImage}.webp')` } : {}">
+    <section class="heroContainer">
+        <video autoplay muted loop playsinline class="bgVideo">
+            <source :src="`/videos/${heroVideo}.mp4`" type="video/mp4">
+        </video>
         <div class="hero heroPages column">
             <div class="column">
                 <h1 :data-text="title">
@@ -23,7 +26,7 @@ export default {
         description: {
             type: String,
         },
-        heroImage: {
+        heroVideo: {
             type: String,
         }
     }

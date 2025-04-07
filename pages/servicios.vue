@@ -2,7 +2,7 @@
     <main>
         <PagesHero title="SOLUCIONES QUE TRANSFORMAN"
             description="Desde la idea hasta la ejecución, ofrecemos estrategias creativas para llevar tu marca más lejos."
-            backgroundClass="heroSomos" />
+            backgroundClass="heroSomos" heroVideo="" />
         <div class="parallaxContent">
             <ServiciosCapacidades />
             <ServiciosEquipo />

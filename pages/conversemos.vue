@@ -1,7 +1,7 @@
 <template>
     <main>
         <PagesHero title="HABLEMOS DE TU PRÓXIMO GRAN PROYECTO"
-            description="Trabajemos para hacerlo único, relevante y memorable." backgroundClass="heroSomos" />
+            description="Trabajemos para hacerlo único, relevante y memorable." backgroundClass="heroSomos" heroVideo="" />
         <div class="parallaxContent">
             <section class="column bg-white">
                 <div class="w-full column">
