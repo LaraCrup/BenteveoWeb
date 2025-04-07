@@ -30,35 +30,75 @@
     </main>
 </template>
 
-<script>
+<script setup>
+import { ref, computed, onMounted } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
 import { blogs } from '~/shared/blogs';
 import { writters } from '~/shared/writters';
 
-export default {
-    data() {
-        return {
-            blog: null
-        }
-    },
-    computed: {
-        author() {
-            if (!this.blog) return { name: 'Autor desconocido', image: 'author' };
-            return writters.find(writer => writer.id === this.blog.authorId) || { 
-                name: 'Autor desconocido', 
-                image: 'author' 
-            };
-        }
-    },
-    created() {
-        this.blog = blogs.find(b => b.slug === this.$route.params.slug);
-    },
-    mounted() {
-        if (!this.blog) {
-            this.$router.push(ROUTE_NAMES.NOVEDADES);
+const route = useRoute();
+const router = useRouter();
+
+const blog = ref(null);
+
+blog.value = blogs.find(b => b.slug === route.params.slug);
+
+const author = computed(() => {
+    if (!blog.value) return { name: 'Autor desconocido', image: 'author' };
+    return writters.find(writer => writer.id === blog.value.authorId) || {
+        name: 'Autor desconocido',
+        image: 'author'
+    };
+});
+
+onMounted(() => {
+    if (!blog.value) {
+        router.push(ROUTE_NAMES.NOVEDADES);
+    }
+});
+
+useSeoMeta({
+    title: () => `${blog.value?.title} | Benteveo - Blog`,
+    description: () => blog.value?.summary,
+    ogTitle: () => `${blog.value?.title} | Benteveo - Blog`,
+    ogDescription: () => blog.value?.summary,
+    ogImage: () => `/images/blogs/${blog.value?.slug}.webp`,
+    ogUrl: () => `https://benteveo.com/trabajos/${blog.value?.slug}`,
+    twitterTitle: () => `${blog.value?.title} | Benteveo - Blog`,
+    twitterDescription: () => blog.value?.summary,
+    twitterImage: () => `/images/blogs/${blog.value?.slug}.webp`,
+    twitterCard: 'summary_large_image',
+});
+
+useSchemaOrg([
+    defineWebPage({
+        name: () => blog.value?.title,
+        description: () => blog.value?.summary,
+        image: () => `https://benteveo.com/images/blogs/${blog.value?.slug}.webp`,
+    }),
+    {
+        '@type': 'CreativeWork',
+        name: () => blog.value?.title,
+        description: () => blog.value?.summary,
+        image: () => `https://benteveo.com/images/blogs/${blog.value?.slug}.webp`,
+        author: {
+            '@type': 'Organization',
+            name: 'Benteveo',
+            url: 'https://benteveo.com'
+        },
+        headline: () => blog.value?.subtitle,
+        datePublished: new Date().toISOString(),
+        publisher: {
+            '@type': 'Organization',
+            name: 'Benteveo',
+            logo: {
+                '@type': 'ImageObject',
+                url: '/images/headerFooter/Logo-Benteveo.webp'
+            }
         }
     }
-}
+]);
 </script>
 
 <style>

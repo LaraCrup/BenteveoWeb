@@ -150,7 +150,7 @@ useSeoMeta({
     ogTitle: () => `${project.value?.title} | Benteveo - Trabajos`,
     ogDescription: () => project.value?.description,
     ogImage: () => `/images/projects/${project.value?.img}-campana-benteveo.webp`,
-    // ogUrl: () => `https://benteveo.com/trabajos/${project.value?.slug}`,
+    ogUrl: () => `https://benteveo.com/trabajos/${project.value?.slug}`,
     twitterTitle: () => `${project.value?.title} | Benteveo - Trabajos`,
     twitterDescription: () => project.value?.description,
     twitterImage: () => `/images/projects/${project.value?.img}-campana-benteveo.webp`,
