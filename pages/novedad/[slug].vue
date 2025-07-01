@@ -118,6 +118,12 @@ useSchemaOrg([
     font-weight: bold;
 }
 
+.blogContent ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .blogContent ul li {
     list-style: disc;
     list-style-position: inside;

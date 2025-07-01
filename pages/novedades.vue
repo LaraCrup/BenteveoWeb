@@ -19,7 +19,7 @@ import { blogs } from '~/shared/blogs';
 export default {
     data() {
         return {
-            blogs: blogs
+            blogs: blogs.slice().reverse()
         }
     }
 }
