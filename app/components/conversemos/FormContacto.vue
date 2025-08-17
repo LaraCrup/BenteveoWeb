@@ -34,13 +34,17 @@
                 <span v-else>ENVIAR</span>
             </button>
         </div>
-        <Dialog v-model:visible="showSuccessDialog" :modal="true" :closable="true" :closeOnEscape="true"
-            :dismissableMask="true" @hide="closeDialog">
-            <div class="dialogContent column">
-                <p class="text-center">¡Tus datos se enviaron correctamente!</p>
-                <p class="text-center font-semibold">Nos pondremos en contacto con vos en la brevedad.</p>
+        <div v-if="showSuccessDialog" class="modal-overlay" @click="closeDialog">
+            <div class="modal-content" @click.stop>
+                <button class="modal-close" @click="closeDialog">
+                    <Icon name="mingcute:close-line" />
+                </button>
+                <div class="modal-body">
+                    <p class="text-center">¡Tus datos se enviaron correctamente!</p>
+                    <p class="text-center font-semibold">Nos pondremos en contacto con vos en la brevedad.</p>
+                </div>
             </div>
-        </Dialog>
+        </div>
     </form>
 </template>
 
@@ -247,6 +251,98 @@ label {
 @media (width >=1080px) {
     form {
         width: 48% !important;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 264px;
+    position: relative;
+    background: var(--color-white);
+    border: 2px solid var(--color-primary);
+    color: var(--color-black);
+    padding: 1.25rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.875rem;
+    right: 0.875rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media (width >=660px) {
+    .modal-content {
+        max-width: 484px;
+        padding: 1.75rem;
+    }
+
+    .modal-close {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .modal-close svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .modal-body {
+        gap: 1rem;
+    }
+
+    .modal-body p {
+        font-size: 1rem;
+    }
+}
+
+@media (width >=1080px) {
+    .modal-content {
+        max-width: 615px;
+        padding: 2.25rem;
+    }
+
+    .modal-close {
+        top: 1.25rem;
+        right: 1.25rem;
+    }
+
+    .modal-close svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .modal-body {
+        gap: 1.5rem;
+    }
+
+    .modal-body p {
+        font-size: 1.25rem;
     }
 }
 </style>
