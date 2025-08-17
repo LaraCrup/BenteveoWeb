@@ -5,23 +5,13 @@ export default defineNuxtConfig({
   css: ["~/assets/main.css", 'swiper/css',
     'swiper/css/effect-creative', 'animate.css'],
   modules: [
-    "@primevue/nuxt-module",
     "@nuxt/image",
     "@nuxt/icon",
     "@nuxtjs/seo",
-    "nuxt-vitalizer",
-    'nuxt-booster',
-    '@nuxtjs/fontaine',
     'nuxt-anchorscroll',
-    '@nuxt/scripts',
     '@nuxt/fonts',
     'nuxt-swiper',
   ],
-  primevue: {
-    components: {
-      include: []
-    }
-  },
   fonts: {
     defaults: {
       weights: [400, 500, 700, 900],
@@ -58,23 +48,6 @@ export default defineNuxtConfig({
     description: 'Benteveo',
     defaultLocale: 'es',
   },
-  booster: {
-    detection: {
-      performance: true,
-      browserSupport: true,
-      battery: true
-    },
-    performanceMetrics: {
-      timing: {
-        fcp: 800,
-        dcl: 1200
-      }
-    },
-    lazyOffset: {
-      component: '0%',
-      asset: '0%'
-    }
-  },
   image: {
     screens: {
       default: 320,
@@ -92,9 +65,5 @@ export default defineNuxtConfig({
       youtube: 'https://img.youtube.com',
       vimeo: 'https://i.vimeocdn.com',
     }
-  },
-  vitalizer: {
-    disableStylesheets: 'entry',
-    disablePrefetchLinks: true
   },
 })
