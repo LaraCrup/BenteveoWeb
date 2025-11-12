@@ -2,6 +2,7 @@
   <main>
     <HomeHero />
     <div class="parallaxContent">
+      <HomeIA />
       <HomeProjects />
       <HomeClients />
       <HomeHacemos />
