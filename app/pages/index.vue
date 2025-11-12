@@ -3,6 +3,7 @@
     <HomeHero />
     <div class="parallaxContent">
       <HomeIA />
+      <HomeAutoridad />
       <HomeProjects />
       <HomeClients />
       <HomeHacemos />
