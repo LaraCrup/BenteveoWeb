@@ -12,26 +12,21 @@
             </div>
             <div class="hacemosContent column">
                 <div class="column wow animate__animated animate__fadeInUp">
-                    <p class="font-bold">SI LO PENSAMOS,</p>
-                    <h2>LO HACEMOS</h2>
+                    <h2>LA IA ESTÁ CAMBIANDO LAS BÚSQUEDAS,</h2>
+                    <p class="font-bold">NOSOTROS, LA MANERA EN LA QUE TE ENCUENTRAN.</p>
                 </div>
                 <p class="maxParagraph wow animate__animated animate__fadeInUp">
-                    La creatividad es el origen de todo lo que hacemos. Pero no nos detenemos en las ideas; las hacemos
-                    realidad. Las convertimos en acciones innovadoras, útiles e inteligentes orientadas a lograr
-                    resultados.
+                    La creatividad ya no es suficiente. En la era de las respuestas generadas por IA, el objetivo no es
+                    solo posicionar; es <span>convertirse en la fuente</span>. Si tu marca no es citada en los resúmenes
+                    de IA, eres invisible.
                 </p>
-                <NuxtLink :to="ROUTE_NAMES.TRABAJOS" class="primaryButton wow animate__animated animate__fadeInUp">PASEN
-                    Y VEAN
-                </NuxtLink>
+                <p class="maxParagraph wow animate__animated animate__fadeInUp">
+                    Diseñamos estrategias de <span>GEO (Optimización de Motor Generativo)</span> que entrenan a la IA para reconocer tu marca como la máxima autoridad en tu sector.
+                </p>
             </div>
         </div>
     </section>
 </template>
-
-<script setup>
-import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
-
-</script>
 
 <style scoped>
 .pensamosHacemos {
@@ -83,6 +78,10 @@ import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
 
 .hacemosContent div p {
     font-size: 1rem;
+}
+
+.hacemosContent p span{
+    font-weight: bold;
 }
 
 @media (width >=660px) {
