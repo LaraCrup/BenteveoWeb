@@ -1,7 +1,7 @@
 <template>
     <section class="w-full pensamosHacemos">
         <video autoplay muted loop playsinline class="backgroundVideo">
-            <source src="/videos/somos/video-nuestro-adn.mp4" type="video/mp4">
+            <source src="/videos/home/IA-benteveo-fondo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="column">
@@ -45,6 +45,7 @@
     left: 0;
     z-index: 1;
     object-fit: cover;
+    object-position: center -40px;
 }
 
 .pensamosHacemos>div {
