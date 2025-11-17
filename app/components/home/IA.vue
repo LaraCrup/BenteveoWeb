@@ -15,13 +15,14 @@
                     <h2>LA IA ESTÁ CAMBIANDO LAS BÚSQUEDAS,</h2>
                     <p class="font-bold">NOSOTROS, LA MANERA EN LA QUE TE ENCUENTRAN.</p>
                 </div>
-                <p class="maxParagraph wow animate__animated animate__fadeInUp">
+                <p class="noMobile maxParagraph wow animate__animated animate__fadeInUp">
                     La creatividad ya no es suficiente. En la era de las respuestas generadas por IA, el objetivo no es
                     solo posicionar; es <span>convertirse en la fuente</span>. Si tu marca no es citada en los resúmenes
                     de IA, eres invisible.
                 </p>
                 <p class="maxParagraph wow animate__animated animate__fadeInUp">
-                    Diseñamos estrategias de <span>GEO (Optimización de Motor Generativo)</span> que entrenan a la IA para reconocer tu marca como la máxima autoridad en tu sector.
+                    Diseñamos estrategias de <span>GEO (Optimización de Motor Generativo)</span> que entrenan a la IA
+                    para reconocer tu marca como la máxima autoridad en tu sector.
                 </p>
             </div>
         </div>
@@ -81,8 +82,12 @@
     font-size: 1rem;
 }
 
-.hacemosContent p span{
+.hacemosContent p span {
     font-weight: bold;
+}
+
+.noMobile {
+    display: none;
 }
 
 @media (width >=660px) {
@@ -146,6 +151,10 @@
     .miniVideoContainer {
         width: 15rem;
         height: 15rem;
+    }
+
+    .noMobile {
+        display: block;
     }
 }
 

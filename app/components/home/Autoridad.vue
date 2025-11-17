@@ -5,12 +5,15 @@
                 <h2 class="column">
                     IDEAS QUE GENERAN AUTORIDAD,<span>Y SE CONVIERTEN EN CITAS.</span>
                 </h2>
-                <p class="maxParagraph text-dark-gray">
-                    Ayudamos a las marcas a ganar "participación mental" (mindshare) en la nueva era de la búsqueda. No se trata de SEO tradicional; se trata de asegurar que tu voz sea la que la IA utilice para educar a tus futuros clientes.
+                <p class="noMobile maxParagraph text-dark-gray">
+                    Ayudamos a las marcas a ganar "participación mental" (mindshare) en la nueva era de la búsqueda. No
+                    se trata de SEO tradicional; se trata de asegurar que tu voz sea la que la IA utilice para educar a
+                    tus futuros clientes.
                 </p>
             </div>
             <div class="servicesContainer column">
-                <div v-for="(service, index) in services" :key="index" class="service column wow animate__animated animate__fadeInUp">
+                <div v-for="(service, index) in services" :key="index"
+                    class="service column wow animate__animated animate__fadeInUp">
                     <div class="column">
                         <div class="serviceHeader rowCenter">
                             <img :src="`/images/services/${service.img}-Benteveo.svg`"
@@ -84,14 +87,18 @@ section>div {
     width: 100%;
 }
 
-.btnConoceMas{
+.btnConoceMas {
     border-color: var(--color-primary);
     color: var(--color-primary);
 }
 
-.btnConoceMas:hover{
+.btnConoceMas:hover {
     background-color: var(--color-primary);
     color: var(--color-black);
+}
+
+.noMobile {
+    display: none;
 }
 
 @media (width >=660px) {
@@ -144,21 +151,25 @@ section>div {
     .serviceHeader img {
         width: 3.5rem;
     }
+
+    .noMobile {
+        display: block;
+    }
 }
 
-@media (width >= 1080px) {
+@media (width >=1080px) {
     .service {
         width: 31%;
     }
 }
 
-@media (width >= 1280px) {
+@media (width >=1280px) {
     .service {
         width: 31.45%;
     }
 }
 
-@media (width >= 1440px) {
+@media (width >=1440px) {
     .service {
         width: 31.625%;
     }
