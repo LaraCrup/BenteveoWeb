@@ -1,6 +1,6 @@
 <template>
   <section class="heroContainer">
-    <video autoplay muted loop playsinline class="bgVideo">
+    <video autoplay muted loop playsinline class="bgVideo" poster="/images/home/Equipo-Benteveo.webp">
       <source src="/videos/home/Benteveo-Agencia-Publicitaria.mp4" type="video/mp4">
     </video>
     <div class="hero column">
