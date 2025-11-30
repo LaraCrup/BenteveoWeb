@@ -3,7 +3,7 @@
         <div class="column">
             <div>
                 <h2 class="gradient-text">¿Cómo está tu marca en el menú de la IA?</h2>
-                <p>
+                <p class="subtitle">
                     Un desayuno exclusivo para entender la nueva receta del GEO.
                 </p>
             </div>
@@ -60,15 +60,15 @@ section>div div:first-of-type {
     text-align: center;
 }
 
-section>div div:first-of-type p {
-    font-size: 1rem;
-    font-weight: 500;
-}
-
 h2 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .pasos {
@@ -98,5 +98,78 @@ h2 {
     font-size: 0.875rem;
     font-weight: 500;
     list-style: disc;
+}
+
+@media (width >=768px) {
+    section>div {
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .pasos {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .paso {
+        width: 50%;
+        padding: 1.5rem;
+    }
+}
+
+@media (width >=1080px) {
+    section>div {
+        gap: 3rem;
+        padding: 3rem 4rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    .subtitle {
+        font-size: 1.75rem;
+    }
+
+    .paso {
+        border-radius: 36px;
+        padding: 3rem;
+    }
+
+    .paso h3 {
+        max-width: 17.25rem;
+        font-size: 1.75rem;
+    }
+
+    .paso ul li {
+        font-size: 1.5rem;
+    }
+}
+
+@media (width >=1440px) {
+    section>div {
+        gap: 4rem;
+        padding: 4rem;
+    }
+
+    .paso {
+        padding: 4rem;
+    }
+
+    .paso h3 {
+        max-width: 100%;
+    }
+
+    .paso ul li {
+        font-size: 1.5rem;
+    }
 }
 </style>

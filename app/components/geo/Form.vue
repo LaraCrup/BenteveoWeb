@@ -4,7 +4,7 @@
             <div class="columnAlignCenter">
                 <h2>Los consumidores están cambiando su forma de buscar. Te invitamos a un desayuno de networking para
                     anticiparte al cambio.</h2>
-                <p>
+                <p class="subtitle">
                     Registrate completando el formulario
                     a continuación para recibir la invitación exclusiva al evento.
                 </p>
@@ -13,7 +13,7 @@
                 </span>
             </div>
             <form v-if="!showSuccessDialog" id="formGeo" @submit.prevent="handleSubmit"
-                class="w-full formGeo columnAlignCenter">
+                class="formGeo columnAlignCenter">
                 <div class="formGroup">
                     <label for="nombre">Nombre y Apellido</label>
                     <div class="inputWrapper">
@@ -201,7 +201,7 @@ h2 {
     font-weight: bold;
 }
 
-section>div div:first-of-type>p {
+.subtitle {
     text-align: center;
     font-size: 0.875rem;
     color: var(--color-dark-black);
@@ -216,6 +216,7 @@ section>div div:first-of-type>p {
 }
 
 form {
+    width: 100%;
     gap: 0.5rem;
     background-color: var(--color-white);
     border-radius: 18px;
@@ -333,6 +334,134 @@ form button {
 @keyframes spin {
     to {
         transform: rotate(360deg);
+    }
+}
+
+@media (width >=768px) {
+    section>div {
+        gap: 2rem;
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem 2.5rem;
+    }
+
+    section>div>div:first-of-type {
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    h2,
+    .subtitle {
+        text-align: start;
+    }
+
+    .evento {
+        padding: 1rem 1.25rem;
+    }
+
+    .evento p {
+        font-size: 0.75rem;
+    }
+
+    form,
+    .successContainer {
+        width: 20.5rem;
+        flex-shrink: 0;
+        padding: 1.5rem;
+    }
+
+    .formGroup input {
+        height: 3rem;
+    }
+
+    form button {
+        width: max-content;
+    }
+}
+
+@media (width >=1080px) {
+    section>div {
+        gap: 4.75rem;
+        padding: 3rem 4rem;
+    }
+
+    section>div>div:first-of-type {
+        width: 51%;
+        gap: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .evento {
+        padding: 1rem 1.5rem;
+    }
+
+    .evento p {
+        font-size: 1.25rem;
+    }
+
+    form,
+    .successContainer {
+        width: 24.5rem;
+        border-radius: 36px;
+        padding: 2rem;
+    }
+
+    .formGroup {
+        gap: 0.5rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .formGroup input,
+    .error span {
+        font-size: 0.875rem;
+    }
+
+    .error span span {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .successContainer img {
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .successContainer p:first-of-type {
+        font-size: 1.75rem;
+    }
+
+    .successContainer p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (width >=1440px) {
+    section>div {
+        gap: 7.25rem;
+        padding: 4rem;
+    }
+
+    h2 {
+        max-width: 36rem;
+        font-size: 1.75rem;
+    }
+
+    .subtitle {
+        max-width: 36rem;
+    }
+
+    .successContainer {
+        padding: 2.5rem 2rem;
     }
 }
 </style>
