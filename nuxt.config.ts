@@ -11,7 +11,11 @@ export default defineNuxtConfig({
     'nuxt-anchorscroll',
     '@nuxt/fonts',
     'nuxt-swiper',
+    '@nuxtjs/supabase',
   ],
+  supabase: {
+    redirect: false,
+  },
   fonts: {
     defaults: {
       weights: [400, 500, 700, 900],

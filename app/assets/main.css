@@ -149,6 +149,7 @@ h3,
 
 p,
 .primaryButton,
+.landingButton,
 a,
 li {
   font-size: 0.75rem;
@@ -388,25 +389,45 @@ li {
 
 /* Buttons */
 
-.primaryButton {
+.primaryButton,
+.landingButton {
   width: max-content;
   height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
-  border: 2px solid var(--color-white);
   text-decoration: none;
-  color: var(--color-white);
   font-size: 0.75rem;
   font-weight: 500;
   transition: all 0.3s;
   padding: 0 2rem;
 }
 
+.primaryButton {
+  background: transparent;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+}
+
 .primaryButton:hover {
   background: var(--color-white);
   color: var(--color-black);
+}
+
+.landingButton {
+  height: auto;
+  background: linear-gradient(90deg, #1CA5EC 0%, #E45162 100%);
+  border: none;
+  border-radius: 999px;
+  color: var(--color-white);
+  font-family: "Lato", serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+}
+
+.landingButton:hover {
+  color: var(--color-white);
 }
 
 /* Backgrounds & Typography */
@@ -428,6 +449,17 @@ li {
 
 .bg-dark-black {
   background-color: var(--color-dark-black);
+}
+
+.bg-blue-red {
+  background: linear-gradient(90deg, #1CA5EC 0%, #E45162 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #1CA5EC 0%, #E45162 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-white {
@@ -486,12 +518,14 @@ li {
 
   p,
   .primaryButton,
+  .landingButton,
   a,
   li {
     font-size: 0.875rem;
   }
 
-  .primaryButton {
+  .primaryButton,
+  .landingButton {
     height: auto;
     padding: 1rem 2.5rem;
   }
@@ -581,12 +615,14 @@ li {
 
   p,
   .primaryButton,
+  .landingButton,
   a,
   li {
     font-size: 1rem;
   }
 
-  .primaryButton {
+  .primaryButton,
+  .landingButton {
     padding: 1.125rem 3rem;
   }
 
@@ -642,7 +678,8 @@ li {
     font-size: 4rem;
   }
 
-  .primaryButton {
+  .primaryButton,
+  .landingButton {
     font-size: 1.125rem;
   }
 
