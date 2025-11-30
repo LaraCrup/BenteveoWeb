@@ -66,7 +66,13 @@ h1 {
         top: 6.625rem;
     }
 
+    .hero {
+        flex-direction: column !important;
+        align-items: flex-end !important;
+    }
+
     .hero video {
+        width: 50%;
         height: 20rem;
     }
 
@@ -119,7 +125,8 @@ h1 {
     }
 
     .hero video {
-        height: 31.25rem;
+        height: 100%;
+        max-height: 31.25rem;
     }
 
     .hero>div {

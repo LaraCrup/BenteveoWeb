@@ -64,5 +64,9 @@ header button span:last-of-type {
     header {
         padding: 2rem 5.625rem;
     }
+
+    header>div {
+        max-width: 1440px;
+    }
 }
 </style>

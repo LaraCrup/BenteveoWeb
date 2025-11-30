@@ -155,9 +155,14 @@ h2 {
 }
 
 @media (width >=1440px) {
-    section>div {
-        gap: 4rem;
+    section {
         padding: 4rem;
+    }
+
+    section>div {
+        max-width: 1440px;
+        gap: 4rem;
+        padding: 0;
     }
 
     .paso {

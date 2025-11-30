@@ -5,7 +5,7 @@
                 <NuxtImg class="logo" src="/images/headerFooter/Logo-Benteveo.webp" alt="Logo Benteveo" />
             </NuxtLink>
             <div class="links">
-                <NuxtLink v-for="(link, index) in links" :key="index" :to="link.href" :aria-label="link.ariaLabel" class="allCenter"><Icon :name="`mingcute:${link.icon}`" /></NuxtLink>
+                <NuxtLink v-for="(link, index) in links" :key="index" :to="link.href" :aria-label="link.ariaLabel" target="_blank" class="allCenter"><Icon :name="`mingcute:${link.icon}`" /></NuxtLink>
             </div>
         </div>
     </footer>
@@ -73,6 +73,17 @@ footer>div {
 @media (width >=1080px) {
     .logo {
         height: 2.75rem;
+    }
+}
+
+@media (width >=1440px) {
+    footer {
+        padding: 1.75rem 4rem;
+    }
+
+    footer>div {
+        max-width: 1440px;
+        padding: 0;
     }
 }
 </style>

@@ -67,7 +67,7 @@
 
             <div v-else class="successContainer allCenter">
                 <NuxtImg src="/images/geo/Form-Enviado.svg" alt="Form Enviado" />
-                <p class="column">Muchas gracias <span>por registrarte</span></p>
+                <p>Muchas gracias por registrarte</p>
                 <p>A la brevedad estaremos enviandote la invitación a tu número de WhatsApp</p>
             </div>
         </div>
@@ -408,7 +408,7 @@ form button {
 
     form,
     .successContainer {
-        width: 24.5rem;
+        width: 40%;
         border-radius: 36px;
         padding: 2rem;
     }
@@ -435,7 +435,7 @@ form button {
         width: 6rem;
         height: 6rem;
     }
-    
+
     .successContainer p:first-of-type {
         font-size: 1.75rem;
     }
@@ -446,18 +446,18 @@ form button {
 }
 
 @media (width >=1440px) {
-    section>div {
-        gap: 7.25rem;
+    section {
         padding: 4rem;
     }
 
-    h2 {
-        max-width: 36rem;
-        font-size: 1.75rem;
+    section>div {
+        max-width: 1440px;
+        gap: 7.25rem;
+        padding: 0;
     }
 
-    .subtitle {
-        max-width: 36rem;
+    h2 {
+        font-size: 1.75rem;
     }
 
     .successContainer {
