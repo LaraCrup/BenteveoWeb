@@ -1,7 +1,7 @@
 <template>
     <section class="heroContainer">
         <div class="hero column">
-            <video ref="videoElement" :src="videoSrc" autoplay muted loop></video>
+            <video ref="videoElement" :src="videoSrc" autoplay muted loop playsinline webkit-playsinline></video>
             <div>
                 <div class="heroContent columnAlignCenter">
                     <h1 class="gradient-text">GEO, la nueva estrategia para aparecer en las respuestas de la IA</h1>
