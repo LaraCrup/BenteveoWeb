@@ -8,9 +8,9 @@
                     Registrate completando el formulario
                     a continuación para recibir la invitación exclusiva al evento.
                 </p>
-                <span class="evento">
+                <a href="https://maps.app.goo.gl/cAHTukBY7XohB95t9" target="_blank" class="evento">
                     <p>11 de diciembre · 9:30 hs · AZAI Espacio Culinario</p>
-                </span>
+                </a>
             </div>
             <form v-if="!showSuccessDialog" id="formGeo" @submit.prevent="handleSubmit"
                 class="formGeo columnAlignCenter">
@@ -212,6 +212,7 @@ h2 {
     background-color: var(--color-dark-black);
     border-radius: 999px;
     color: var(--color-white);
+    text-decoration: none;
     padding: 0.75rem;
 }
 

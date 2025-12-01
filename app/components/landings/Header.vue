@@ -4,7 +4,7 @@
             <NuxtLink :to="ROUTE_NAMES.HOME" class="allCenter">
                 <NuxtImg class="logo" src="/images/headerFooter/Logo-Benteveo.webp" alt="Logo Benteveo" />
             </NuxtLink>
-            <button class="landingButton">
+            <button class="landingButton" @click="scrollToForm">
                 <span>Registrarme</span>
                 <span>Confirmar asistencia</span>
             </button>
@@ -14,6 +14,13 @@
 
 <script setup>
 import { ROUTE_NAMES } from '~/constants/ROUTE_NAMES';
+
+const scrollToForm = () => {
+    const formElement = document.getElementById('formGeo');
+    if (formElement) {
+        formElement.scrollIntoView({ behavior: 'smooth' });
+    }
+};
 </script>
 
 <style scoped>

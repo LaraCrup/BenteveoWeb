@@ -6,11 +6,11 @@
                 <div class="heroContent columnAlignCenter">
                     <h1 class="gradient-text">GEO, la nueva estrategia para aparecer en las respuestas de la IA</h1>
                     <p class="subtitle">Un encuentro exclusivo con cocina en vivo</p>
-                    <span class="bg-blue-red">
+                    <a href="https://maps.app.goo.gl/cAHTukBY7XohB95t9" target="_blank" class="bg-blue-red">
                         <p>
                             11 de diciembre · 9:30 hs · AZAI Espacio Culinario
                         </p>
-                    </span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -75,8 +75,10 @@ onBeforeUnmount(() => {
     padding: 2.5rem 1rem;
 }
 
-.hero span {
+.hero a {
     border-radius: 999px;
+    color: var(--color-white);
+    text-decoration: none;
     padding: 0.75rem;
 }
 
@@ -115,7 +117,7 @@ h1 {
     }
 
     .heroContent {
-        max-width: 20rem;
+        max-width: 45%;
         height: 100%;
         justify-content: center;
         align-items: flex-start;
@@ -135,7 +137,7 @@ h1 {
         font-weight: 500;
     }
 
-    .hero span {
+    .hero a {
         padding: 0.75rem 1.25rem;
     }
 
@@ -150,7 +152,7 @@ h1 {
     }
 
     .heroContent {
-        max-width: 31rem;
+        max-width: 50%;
     }
 
     .hero video {
@@ -171,8 +173,7 @@ h1 {
         font-size: 1.75rem;
     }
 
-    .hero span {
-        width: 100%;
+    .hero a {
         text-align: center;
         padding: 1rem 1.5rem;
     }
@@ -185,6 +186,21 @@ h1 {
 @media (width >=1440px) {
     .heroContainer {
         top: 115px;
+        background: var(--color-dark-black);
+    }
+
+    .hero {
+        max-width: 1440px;
+    }
+
+    .hero>div {
+        background: linear-gradient(to left, var(--color-dark-black) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%);
+    }
+}
+
+@media (width >=1600px) {
+    .hero>div {
+        padding-left: 0;
     }
 }
 </style>
