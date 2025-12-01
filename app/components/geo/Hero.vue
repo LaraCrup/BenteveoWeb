@@ -1,7 +1,7 @@
 <template>
     <section class="heroContainer">
         <div class="hero column">
-            <video src="/videos/landings/Evento-Geo.mp4" autoplay muted loop></video>
+            <video ref="videoElement" :src="videoSrc" autoplay muted loop></video>
             <div>
                 <div class="heroContent columnAlignCenter">
                     <h1 class="gradient-text">GEO, la nueva estrategia para aparecer en las respuestas de la IA</h1>
@@ -16,6 +16,36 @@
         </div>
     </section>
 </template>
+
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const videoSrc = ref('/videos/landings/Evento-Geo-Mobile.mp4')
+const videoElement = ref(null)
+
+const updateVideoSource = () => {
+    const width = window.innerWidth
+
+    if (width < 768) {
+        videoSrc.value = '/videos/landings/Evento-Geo-Mobile.mp4'
+    } else if (width < 1080) {
+        videoSrc.value = '/videos/landings/Evento-Geo-Tablet.mp4'
+    } else if (width < 1440) {
+        videoSrc.value = '/videos/landings/Evento-Geo-Desktop.mp4'
+    } else {
+        videoSrc.value = '/videos/landings/Evento-Geo-DesktopXL.mp4'
+    }
+}
+
+onMounted(() => {
+    updateVideoSource()
+    window.addEventListener('resize', updateVideoSource)
+})
+
+onBeforeUnmount(() => {
+    window.removeEventListener('resize', updateVideoSource)
+})
+</script>
 
 <style scoped>
 * {
@@ -34,7 +64,6 @@
 }
 
 .hero video {
-    width: 100%;
     min-height: 15.75rem;
     object-fit: cover;
     object-position: right;
@@ -69,10 +98,10 @@ h1 {
     .hero {
         flex-direction: column !important;
         align-items: flex-end !important;
+        background: var(--color-dark-black);
     }
 
     .hero video {
-        width: 50%;
         height: 20rem;
     }
 
@@ -81,7 +110,7 @@ h1 {
         height: 100%;
         position: absolute;
         top: 0;
-        background: linear-gradient(to right, var(--color-dark-black) 0%, var(--color-dark-black) 50%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(to right, var(--color-dark-black) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
         padding: 3.125rem 0 3.125rem 2rem;
     }
 
