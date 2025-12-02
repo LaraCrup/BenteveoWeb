@@ -6,7 +6,7 @@
                 <div class="heroContent columnAlignCenter">
                     <h1 class="gradient-text">GEO, la nueva estrategia para aparecer en las respuestas de la IA</h1>
                     <p class="subtitle">Un encuentro exclusivo con cocina en vivo</p>
-                    <a href="https://maps.app.goo.gl/cAHTukBY7XohB95t9" target="_blank" class="bg-blue-red">
+                    <a href="https://maps.app.goo.gl/m99DxuaevtjWLMpU6" target="_blank" class="bg-blue-red">
                         <p>
                             11 de diciembre · 9:30 hs · AZAI Espacio Culinario
                         </p>

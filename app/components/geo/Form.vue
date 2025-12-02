@@ -8,8 +8,9 @@
                     Registrate completando el formulario
                     a continuación para recibir la invitación exclusiva al evento.
                 </p>
-                <a href="https://maps.app.goo.gl/cAHTukBY7XohB95t9" target="_blank" class="evento">
+                <a href="https://maps.app.goo.gl/m99DxuaevtjWLMpU6" target="_blank" class="evento">
                     <p>11 de diciembre · 9:30 hs · AZAI Espacio Culinario</p>
+                    <p>Virrey Loreto 3795, Ciudad Autónoma de Buenos Aires</p>
                 </a>
             </div>
             <form v-if="!showSuccessDialog" id="formGeo" @submit.prevent="handleSubmit"
@@ -216,6 +217,15 @@ h2 {
     padding: 0.75rem;
 }
 
+.evento p{
+    text-align: center;
+}
+
+.evento p:first-of-type {
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
 form {
     width: 100%;
     gap: 0.5rem;
@@ -362,6 +372,7 @@ form button {
 
     .evento p {
         font-size: 0.75rem;
+        text-align: start;
     }
 
     form,
@@ -404,7 +415,7 @@ form button {
     }
 
     .evento p {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     form,
@@ -459,6 +470,10 @@ form button {
 
     h2 {
         font-size: 1.75rem;
+    }
+
+    .evento p{
+        font-size: 1.25rem;
     }
 
     .successContainer {
