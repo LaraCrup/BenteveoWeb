@@ -12,12 +12,10 @@
         <div>
           <p>Guatemala 5582 Piso 2</p>
           <p>Buenos Aires, Argentina</p>
-          <p>+54 11 5254 7363</p>
         </div>
         <div>
           <p>152 Southwest 14th Avenue</p>
           <p>Miami, Florida, United States</p>
-          <p>+1 305 900 4934</p>
         </div>
         <div>
           <p>Amunategui 86 Of. 801</p>
