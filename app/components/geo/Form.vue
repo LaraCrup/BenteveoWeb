@@ -69,7 +69,7 @@
             <div v-else class="successContainer allCenter">
                 <NuxtImg src="/images/geo/Form-Enviado.svg" alt="Form Enviado" />
                 <p>Muchas gracias por registrarte</p>
-                <p>A la brevedad estaremos enviandote la invitación a tu número de WhatsApp</p>
+                <p>En breve te estaremos enviando la confirmación por WhatsApp</p>
             </div>
         </div>
     </section>
