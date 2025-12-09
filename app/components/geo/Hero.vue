@@ -6,11 +6,11 @@
                 <div class="heroContent columnAlignCenter">
                     <h1 class="gradient-text">GEO, la nueva estrategia para aparecer en las respuestas de la IA</h1>
                     <p class="subtitle">Un encuentro exclusivo con cocina en vivo</p>
-                    <a href="https://maps.app.goo.gl/m99DxuaevtjWLMpU6" target="_blank" class="bg-blue-red">
+                    <span class="bg-blue-red">
                         <p>
-                            11 de diciembre · 9:30 hs · AZAI Espacio Culinario
+                            Marzo 2026
                         </p>
-                    </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@ onBeforeUnmount(() => {
     padding: 2.5rem 1rem;
 }
 
-.hero a {
+.hero span {
     border-radius: 999px;
     color: var(--color-white);
     text-decoration: none;
@@ -137,7 +137,7 @@ h1 {
         font-weight: 500;
     }
 
-    .hero a {
+    .hero span {
         padding: 0.75rem 1.25rem;
     }
 
@@ -173,7 +173,7 @@ h1 {
         font-size: 1.75rem;
     }
 
-    .hero a {
+    .hero span {
         text-align: center;
         padding: 1rem 1.5rem;
     }

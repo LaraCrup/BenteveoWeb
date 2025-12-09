@@ -8,10 +8,9 @@
                     Registrate completando el formulario
                     a continuación para recibir la invitación exclusiva al evento.
                 </p>
-                <a href="https://maps.app.goo.gl/m99DxuaevtjWLMpU6" target="_blank" class="evento">
-                    <p>11 de diciembre · 9:30 hs · AZAI Espacio Culinario</p>
-                    <p>Virrey Loreto 3795, Ciudad Autónoma de Buenos Aires</p>
-                </a>
+                <span class="evento">
+                    <p>Marzo 2026</p>
+                </span>
             </div>
             <form v-if="!showSuccessDialog" id="formGeo" @submit.prevent="handleSubmit"
                 class="formGeo columnAlignCenter">
@@ -69,7 +68,7 @@
             <div v-else class="successContainer allCenter">
                 <NuxtImg src="/images/geo/Form-Enviado.svg" alt="Form Enviado" />
                 <p>Muchas gracias por registrarte</p>
-                <p>En breve te estaremos enviando la confirmación por WhatsApp</p>
+                <p>Te estaremos confirmando la fecha del nuevo encuentro por correo electrónico.</p>
             </div>
         </div>
     </section>
@@ -219,11 +218,6 @@ h2 {
 
 .evento p{
     text-align: center;
-}
-
-.evento p:first-of-type {
-    font-weight: 800;
-    margin-bottom: 0.5rem;
 }
 
 form {
