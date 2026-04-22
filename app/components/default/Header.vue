@@ -8,7 +8,7 @@
           </NuxtLink>
         </div>
         <div class="emailUs rowCenter">
-          <p>Decí <a href="#" class="text-dark-gray">hola@benteveo.com</a></p>
+          <p>Decí <a href="mailto:hola@benteveo.com" class="text-dark-gray">hola@benteveo.com</a></p>
         </div>
       </div>
       <div class="sandwichNav rowCenter">
