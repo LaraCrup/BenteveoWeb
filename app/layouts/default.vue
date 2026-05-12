@@ -1,11 +1,9 @@
 <template>
-  <ClientOnly>
-    <div class="layout">
-      <DefaultHeader />
-      <slot />
-      <DefaultFooter />
-    </div>
-  </ClientOnly>
+  <div class="layout">
+    <DefaultHeader />
+    <slot />
+    <DefaultFooter />
+  </div>
 </template>
 
 <script setup>

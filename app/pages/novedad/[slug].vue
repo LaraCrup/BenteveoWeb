@@ -64,7 +64,7 @@ useSeoMeta({
     ogTitle: () => `${blog.value?.title} | Benteveo - Blog`,
     ogDescription: () => blog.value?.summary,
     ogImage: () => `/images/blogs/${blog.value?.slug}.webp`,
-    ogUrl: () => `https://benteveo.com/trabajos/${blog.value?.slug}`,
+    ogUrl: () => `https://benteveo.com/novedad/${blog.value?.slug}`,
     twitterTitle: () => `${blog.value?.title} | Benteveo - Blog`,
     twitterDescription: () => blog.value?.summary,
     twitterImage: () => `/images/blogs/${blog.value?.slug}.webp`,

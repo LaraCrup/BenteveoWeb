@@ -15,6 +15,7 @@ export default defineNuxtConfig({
   ],
   supabase: {
     redirect: false,
+    types: false,
   },
   fonts: {
     defaults: {
@@ -49,8 +50,28 @@ export default defineNuxtConfig({
   site: {
     url: 'https://benteveo.com',
     name: 'Benteveo',
-    description: 'Benteveo',
+    description: 'Agencia de publicidad y comunicación que transforma ideas en acciones de marketing. Creamos contenidos, producimos video, gestionamos redes sociales y desarrollamos estrategias para potenciar marcas y organizaciones.',
     defaultLocale: 'es',
+  },
+  // Defaults para Schema.org (módulo nuxt-schema-org incluido en @nuxtjs/seo)
+  schemaOrg: {
+    identity: {
+      type: 'Organization',
+      name: 'Benteveo',
+      url: 'https://benteveo.com',
+      logo: 'https://benteveo.com/images/headerFooter/Logo-Benteveo.webp',
+      sameAs: [
+        'https://www.instagram.com/benteveocomunicacion/',
+        'https://www.linkedin.com/company/benteveo-comunicacion/',
+      ],
+    },
+  },
+  // Sitemap: enumerar slugs dinámicos vía endpoint server
+  sitemap: {
+    sources: [
+      '/api/__sitemap__/urls',
+    ],
+    autoLastmod: true,
   },
   image: {
     screens: {
