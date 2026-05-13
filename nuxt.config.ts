@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     { src: '~/plugins/wow.client.js', mode: 'client' }
   ],
   site: {
-    url: 'https://benteveo.com',
+    url: 'https://www.benteveo.com',
     name: 'Benteveo',
     description: 'Agencia de publicidad y comunicación que transforma ideas en acciones de marketing. Creamos contenidos, producimos video, gestionamos redes sociales y desarrollamos estrategias para potenciar marcas y organizaciones.',
     defaultLocale: 'es',
@@ -58,8 +58,8 @@ export default defineNuxtConfig({
     identity: {
       type: 'Organization',
       name: 'Benteveo',
-      url: 'https://benteveo.com',
-      logo: 'https://benteveo.com/images/headerFooter/Logo-Benteveo.webp',
+      url: 'https://www.benteveo.com',
+      logo: 'https://www.benteveo.com/images/headerFooter/Logo-Benteveo.webp',
       sameAs: [
         'https://www.instagram.com/benteveocomunicacion/',
         'https://www.linkedin.com/company/benteveo-comunicacion/',

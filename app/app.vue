@@ -12,8 +12,8 @@ useHead({
 useSchemaOrg([
   defineOrganization({
     name: 'Benteveo',
-    url: 'https://benteveo.com',
-    logo: 'https://benteveo.com/images/headerFooter/Logo-Benteveo.webp',
+    url: 'https://www.benteveo.com',
+    logo: 'https://www.benteveo.com/images/headerFooter/Logo-Benteveo.webp',
     sameAs: [
       'https://www.instagram.com/benteveocomunicacion/',
       'https://www.linkedin.com/company/benteveo-comunicacion/',
@@ -21,7 +21,7 @@ useSchemaOrg([
   }),
   defineWebSite({
     name: 'Benteveo',
-    url: 'https://benteveo.com',
+    url: 'https://www.benteveo.com',
     inLanguage: 'es-AR',
   }),
 ])

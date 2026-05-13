@@ -64,7 +64,7 @@ useSeoMeta({
     ogTitle: () => `${blog.value?.title} | Benteveo - Blog`,
     ogDescription: () => blog.value?.summary,
     ogImage: () => `/images/blogs/${blog.value?.slug}.webp`,
-    ogUrl: () => `https://benteveo.com/novedad/${blog.value?.slug}`,
+    ogUrl: () => `https://www.benteveo.com/novedad/${blog.value?.slug}`,
     twitterTitle: () => `${blog.value?.title} | Benteveo - Blog`,
     twitterDescription: () => blog.value?.summary,
     twitterImage: () => `/images/blogs/${blog.value?.slug}.webp`,
@@ -75,17 +75,17 @@ useSchemaOrg([
     defineWebPage({
         name: () => blog.value?.title,
         description: () => blog.value?.summary,
-        image: () => `https://benteveo.com/images/blogs/${blog.value?.slug}.webp`,
+        image: () => `https://www.benteveo.com/images/blogs/${blog.value?.slug}.webp`,
     }),
     {
         '@type': 'CreativeWork',
         name: () => blog.value?.title,
         description: () => blog.value?.summary,
-        image: () => `https://benteveo.com/images/blogs/${blog.value?.slug}.webp`,
+        image: () => `https://www.benteveo.com/images/blogs/${blog.value?.slug}.webp`,
         author: {
             '@type': 'Organization',
             name: 'Benteveo',
-            url: 'https://benteveo.com'
+            url: 'https://www.benteveo.com'
         },
         headline: () => blog.value?.subtitle,
         datePublished: new Date().toISOString(),

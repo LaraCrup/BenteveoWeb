@@ -150,7 +150,7 @@ useSeoMeta({
     ogTitle: () => `${project.value?.title} | Benteveo - Trabajos`,
     ogDescription: () => project.value?.description,
     ogImage: () => `/images/projects/${project.value?.img}-campana-benteveo.webp`,
-    ogUrl: () => `https://benteveo.com/trabajos/${project.value?.slug}`,
+    ogUrl: () => `https://www.benteveo.com/trabajos/${project.value?.slug}`,
     twitterTitle: () => `${project.value?.title} | Benteveo - Trabajos`,
     twitterDescription: () => project.value?.description,
     twitterImage: () => `/images/projects/${project.value?.img}-campana-benteveo.webp`,
@@ -162,17 +162,17 @@ useSchemaOrg([
     defineWebPage({
         name: () => project.value?.title,
         description: () => project.value?.description,
-        image: () => `https://benteveo.com/images/projects/${project.value?.slug}.webp`,
+        image: () => `https://www.benteveo.com/images/projects/${project.value?.slug}.webp`,
     }),
     {
         '@type': 'CreativeWork',
         name: () => project.value?.title,
         description: () => project.value?.description,
-        image: () => `https://benteveo.com/images/projects/${project.value?.slug}.webp`,
+        image: () => `https://www.benteveo.com/images/projects/${project.value?.slug}.webp`,
         author: {
             '@type': 'Organization',
             name: 'Benteveo',
-            url: 'https://benteveo.com'
+            url: 'https://www.benteveo.com'
         },
         headline: () => project.value?.subtitle,
         datePublished: new Date().toISOString(),
@@ -181,7 +181,7 @@ useSchemaOrg([
             name: 'Benteveo',
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://benteveo.com/images/logo.png'
+                url: 'https://www.benteveo.com/images/logo.png'
             }
         }
     }
